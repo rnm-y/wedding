@@ -131,8 +131,8 @@ header{
 
 @media (min-width:601px){
   #photo{
-    height: auto;
-    width: 90vw;
+    width: 384px;
+    height: 576px;
   }
 }
 
@@ -169,7 +169,7 @@ header{
 
 .title{
   height: 50px;
-  width: 100%;
+  width: 100vw;
   background-image: url('../photo/header.jpg');
   background-size: cover;
   margin: 10px 0px;
