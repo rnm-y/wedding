@@ -169,7 +169,7 @@ header{
 
 .title{
   height: 50px;
-  width: 100vw;
+  width: 100%;
   background-image: url('../photo/header.jpg');
   background-size: cover;
   margin: 10px 0px;
