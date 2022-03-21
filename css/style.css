@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Shippori+Mincho&display=swap');
+
+html{
+  background-image: url('../photo/background.jpg');
+  background-size: cover;
+  font-family: 'Clicker Script', cursive;
+}
+
+body{
+  margin: 0;
+}
+
+h1{
+  margin-top: 5px;
+  color : white;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+  position: 0;
+  z-index: 1;
+}
+
+.main{
+  padding-top: 60px;
+}
+#nav{
+  position: absolute;
+  top: 0;
+  right: -40%;
+  width: 40%;
+  height: 100vh;
+  background: #fff;
+  transition: .7s;
+}
+
+#nav ul{
+  padding-top: 80px;
+}
+
+#nav ul li{
+  list-style-type: none;
+  font-size: 24px;
+}
+
+#nav a {
+  display: block;
+  text-decoration: none;
+  color :#000;
+  margin: 0 15px;
+  padding: 10px;
+  transition: .5s;
+}
+
+#nav li a :hover{
+  color: white;
+  background: #cd5c5c;
+  border-bottom: none;
+}
+
+#hamburger{
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  height: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.inner_line{
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: 1s;
+  border-radius: 4px;
+}
+#line1{
+  top: 0;
+}
+#line2{
+  top: 8.5px;
+}
+#line3{
+  bottom: 0;
+}
+
+.in{
+  transform: translateX(-70%);
+}
+
+.line_1, .line_2, .line_3{
+  background: black;
+} 
+
+.line_1{
+  transform: rotate(45deg);
+}
+
+.line_2{
+  opacity: 0;
+}
+
+.line_3{
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+#photo {
+  display: block;
+  background-image: url("C:/Users/rnmy3/OneDrive/デスクトップ/wedding/photo/20220129_185400000.png");
+  background-size: cover;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  box-shadow: 8px 8px 16px black;
+}
+
+@media (max-width:600px){
+  #photo{
+    width: 384px;
+    height: 576px;
+  }
+}
+
+@media (min-width:601px){
+  #photo{
+    height: auto;
+    width: 90vh;
+  }
+}
+
+
+
+.greeting{
+  height: auto;
+  width: 90vh;
+  background-image: url('../photo/greeting1.jpg');
+  background-image: cover;
+  margin: 0 auto;
+  box-shadow: 8px 8px 16px;
+}
+
+.message{
+  position: relative;
+  text-align: center;
+  font-size: 16px;
+  height: auto;
+  width: 90vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  padding-top: 50px;
+  font-family: 'Shippori Mincho', serif;
+  top: 50px;
+}
+
+.link{
+  height: 300px;
+  width: 295px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.title{
+  height: 50px;
+  width: 95vh;
+  background-image: url('../photo/header.jpg');
+  background-size: cover;
+  margin: 10px 0px;
+  font-size: 32px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  box-shadow: 4px 4px 8px;
+}
+
+.countdown{
+  width: 480px;
+  height: 400px;
+  background-image:url('../photo/countdown1.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  box-shadow: 8px 8px 16px;
+}
+
+.container{
+  display: flex;
+  font-size: 32px;
+  color:ivory;
+  padding: 25px 0px;
+  font-weight: bold;
+}
+
+.day{
+  width: 100%;
+  text-align: center;  
+}
+
+.timer{
+  width: 30%;
+  text-align: center;
+  margin: 10px;
+}
+
+.fade_in{
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(40);
+  transition: all 1s;
+}
+
+.is_show{
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+
+.profile{
+  height: 724px;
+  width: 500px;
+  background-image: url('../photo/frame3.jpg');
+  background-size: cover;
+  background-position: center;
+  margin:0 auto;
+  margin-bottom: 30px;
+  box-shadow: 8px 8px 16px;
+}
+
+.imagephoto{
+  display: block;
+  height: 450px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 70px;
+}
+
+.profile_sentence{
+  text-align: center;
+}
+
+.profile_subtitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile_subtitle:before,
+.profile_subtitle:after{
+  content: '';
+  flex-grow: 0.2;
+  height: 2.5px;
+  background: #000;
+  margin: 0 1em;
+}
+
+.venue{
+  height:600px;
+  width:500px;
+}
+
+.form{
+  width: 500px;
+}
+
+.p-country-name{
+  display: none;
+}
+
+.post{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.post_{
+  opacity: 1;
+  visibility: visible;
+}
+
+footer{
+  height: 100px;
+}
