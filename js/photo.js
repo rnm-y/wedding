@@ -1,6 +1,6 @@
 'use strict';
 
-const path = ('../photo/')
+const path = ('https://rnm-y.github.io/wedding/photo/')
 const img = new Array ('20220129_185400000.png', '20220129_185324000.png', '20220130_091217471.png');
 
 const back_photo = document.getElementById('photo');
