@@ -284,6 +284,10 @@ header{
   visibility: visible;
 }
 
+.form > a{
+  font-size: 50px;
+  font-weight: bold;
+
 footer{
   height: 100px;
 }
